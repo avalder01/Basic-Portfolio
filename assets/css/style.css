@@ -4,13 +4,12 @@ html, body {
 }
 
 body {
-  left: 0;
-  top: 0;
-  margin: 0;
-  background: #F0F0F0;
+  /* left: 0; */
+  /* top: 0; */
+  /* margin: 0; */
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   color: #777777; 
-  background-image: url("assets/images/concrete_seamless.png");
+  background-image: url("../images/concrete_seamless.png");
   display: flex;
   flex-direction: column;
 }
@@ -20,59 +19,56 @@ body {
 }
 
 #headerBox {
-    position: absolute;
+    position: fixed;
     left: 0;
     top: 0;
     width:100%;
+    height:65px;
     color:#cccccc;
     background: #ffffff;
    border-bottom:2px solid #cccccc 
   }
 
 header {
-  float: left;
-  width: 250px;
-  height: 85px;
-  margin-left: 270px;
+  
+  position: absolute;
+  margin-left: 260px;
+  padding: 20px;
+  height: 25px;
   background:#4aaaa5;
-  text-align: center;
   color:#ffffff;
-  font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 230%;
-  line-height: 80px;
+  font-size: 150%;
   font-weight: bold;
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .button {
   float: right;
-  margin-top: 25px;
-  padding: 5px 10px;
-  margin-right: 260px;
+  position: relative;
+  overflow: auto;
+  padding: 20px;
+  margin-right: 250px;
 }
 
-.button a {
+.button a { 
   font-size: 20px;
-  color: #777;
+  color: #777777;
   text-decoration: none;
-  margin-left: 20px; 
 }
 
-.headerBox::after {
-content:"";
-display: block;
-clear: both;
+.button a:hover {
+  color: #4aaaa5;
 }
+
 
 #content {
   position: relative;
   width: 960px;
   margin: 0 auto 0 auto;
   top: 120px;
-  width: 960px;
   padding: 20px;
   background: #ffffff;
   border: 1px solid #dddddd;
-  /* flex: 1 0 auto; */
 }
 
 h1 {
@@ -98,7 +94,6 @@ h1 {
  .about-me {
   padding: 0;
   margin: 20px 0 0 0;
-  overflow: auto;
   line-height: 150%;
  }
 
