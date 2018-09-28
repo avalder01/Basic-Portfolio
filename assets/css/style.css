@@ -1,12 +1,10 @@
+/* true to all pages  */
 
 html, body {
   height: 100%;
 }
 
 body {
-  /* left: 0; */
-  /* top: 0; */
-  /* margin: 0; */
   font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
   color: #777777; 
   background-image: url("../images/concrete_seamless.png");
@@ -60,47 +58,19 @@ header {
   color: #4aaaa5;
 }
 
-
-#content {
-  position: relative;
-  width: 960px;
-  margin: 0 auto 0 auto;
-  top: 120px;
-  padding: 20px;
-  background: #ffffff;
-  border: 1px solid #dddddd;
-}
-
 h1 {
-  width: 900px;
-  height: 50px;
-  padding: 20px;
-  margin-left: 10px;
-  margin-top: 0px;
+  padding: 10px 0;
+  margin-top: -10px;
   background: white;
   color:#4aaaa5;
   font-family: Georgia, 'Times New Roman', Times, serif;
-  font-size: 250%;
+  font-size: 150%;
   border-bottom:2px solid #cccccc 
 }
 
-#bio-image {
-    height: 200px;
-    width: 150px;
-    margin-right: 10px;
-    float: left;
- }
-
- .about-me {
-  padding: 0;
-  margin: 20px 0 0 0;
-  line-height: 150%;
- }
-
- footer {
+footer {
   width: 100%;
   height: 50px;
-  margin-top: auto;
   border-top: 5px solid #4aaaa5;
   color: #ddd;
   font-size: .75em;
@@ -118,3 +88,42 @@ h1 {
  }
 
  
+/* index style  */
+
+#content {
+  position: relative;
+  width: 960px;
+  margin: 0 auto 0 auto;
+  top: 110px;
+  padding: 20px;
+  background: #ffffff;
+  border: 1px solid #dddddd;
+}
+
+#bio-image {
+    height: 200px;
+    width: 150px;
+    margin-right: 10px;
+    float: left;
+ }
+
+ .about-me {
+  padding: 0;
+  margin: 20px 0 0 0;
+  line-height: 150%;
+ }
+  
+ /* contact style  */
+ input[type=text] {
+  width: 100%;
+  padding: 5px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
+
+textarea {
+  width: 100%;
+  padding: 70px 20px;
+  margin: 8px 0;
+  box-sizing: border-box;
+}
